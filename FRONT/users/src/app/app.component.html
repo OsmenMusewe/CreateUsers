@@ -1,0 +1,14 @@
+<h1>Welcome to User Registration</h1>
+<hr>
+
+<form #userForm = "ngForm" (ngSubmit) = "getDetails(userForm.value)">
+    <input type="text" name="name" placeholder="Enter Name" ngModel>
+    <br><br>
+    <input type="number" name="age" placeholder="Enter Age" ngModel>
+    <br><br>
+    <input type="tel" name="tel" placeholder="Enter Phone Number" ngModel>
+    <br><br>
+    <input type="email" name="email" placeholder="Enter Email" ngModel>
+    <br><br>
+    <button>Add New User</button>
+</form>
